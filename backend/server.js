@@ -18,18 +18,15 @@ import orderRoute from "./Router/Order.route.js";
 const app = express();
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
-app.use(cookieParser());
-const allowedOrigins = [
-                        
-                        "https://splendid-marigold-7f8c73.netlify.app",
-                        "https://majestic-gnome-999332.netlify.app"
-                       ];
+const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"];
 app.use(
   cors({
     origin: allowedOrigins,
     credentials: true,
   })
 );
+
+app.use(cookieParser());
 
 const PORT = process.env.PORT || 4000;
 

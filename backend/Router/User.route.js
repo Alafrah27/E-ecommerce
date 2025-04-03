@@ -28,7 +28,7 @@ router.put("/update/:id", protectAuth, updateUser);
 router.delete("/:id", protectAuth, adminAuth, deleteUser);
 router.post("/register", registerUser);
 router.post("/login", loginUser);
-router.post("/admin", loginAdmin);
+router.post("/admin",  loginAdmin);
 router.post("/logout", logoutUser);
 router.post("/forgetPassword", forgetPassword);
 router.post("/resetpassword/:token", resetPassword);
