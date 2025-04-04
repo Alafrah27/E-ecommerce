@@ -121,6 +121,7 @@ export const loginUser = async (req, res) => {
       httpOnly: true,
       maxAge: 24 * 60 * 60 * 1000,
       secure: true,
+      sameSite: "None",
     });
 
     res.status(200).json({ message: "Login has been successfully" });
@@ -159,6 +160,7 @@ export const loginAdmin = async (req, res) => {
       httpOnly: true,
       maxAge: 24 * 60 * 60 * 1000,
       secure: true,
+      sameSite: "None",
     });
 
     res.status(200).json({ message: "Login has been successfully" });

@@ -8,7 +8,7 @@ import ResetPossword from "./Pages/ResetPossword";
 import ForgetPassword from "./Pages/ForgetPassword";
 import Dashboard from "./Pages/Dashboard";
 import { ToastContainer } from "react-toastify";
-import ProtesRoutes from "./ProtctRout/ProtesRoutes";
+
 import SendTemplate from "./component/SendTemplate";
 import { UserInfo } from "./hooks/Auth/useLogin";
 import Getallusers from "./Pages/Getallusers";
