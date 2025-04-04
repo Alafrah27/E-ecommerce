@@ -13,7 +13,9 @@ export function UserInfo() {
   const { data: User } = useQuery({
     queryKey: ["user"],
     queryFn: async () => {
-      const res = await axiosInstance.get("/user/profile");
+      const res = await axiosInstance.get(
+        "https://e-ecommerce-api.onrender.com/api/user/profile"
+      );
       return res.data;
     },
   });
@@ -195,4 +197,3 @@ export function UseDelteUser() {
 
   return { DeleteUser, isPending };
 }
-
