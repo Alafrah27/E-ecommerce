@@ -21,8 +21,8 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 const allowedOrigins = [
   "https://luminous-alpaca-d95379.netlify.app",
   "https://shimmering-froyo-718814.netlify.app",
-  "http://localhost:5173",
   "http://localhost:5174",
+  "http://localhost:5173",
 ];
 app.use(
   cors({

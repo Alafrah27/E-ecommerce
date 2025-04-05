@@ -44,7 +44,7 @@ function SignupForm() {
   };
 
   return (
-    <div className="bg-white p-4 w-[400px] dark:bg-slate-950">
+    <div className="bg-white p-4 w-[400px] ">
       <div className="flex flex-col items-center gap-2">
         <img
           src="mainlogo.jpeg"
@@ -55,7 +55,10 @@ function SignupForm() {
           Musdar Shope
         </span>
       </div>
-      <form onSubmit={handleLogin} className="flex flex-col gap-4 p-10">
+      <form
+        onSubmit={handleLogin}
+        className="flex flex-col gap-4 p-10 bg-white"
+      >
         <div className="flex  flex-col gap-5">
           <label className=" text-slate-500">FirstName</label>
           <input
@@ -65,7 +68,7 @@ function SignupForm() {
             }}
             type="text"
             placeholder="Inter Your Name"
-            className="px-3 py-5 w-full dark:bg-slate-950 dark:border-slate-400 focus:outline-none border border-grey-300 rounded-sm"
+            className="px-3 py-5 w-full  dark:border-slate-400 focus:outline-none border border-grey-300 rounded-sm"
           />
         </div>
         <div className="flex  flex-col gap-5">

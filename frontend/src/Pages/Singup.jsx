@@ -2,7 +2,7 @@ import SignupForm from "../ui/SingupForm";
 
 function Singup() {
   return (
-    <div className="flex justify-center items-center h-screen w-full  dark:text-white bg-slate-50 ">
+    <div className="flex justify-center items-center h-screen w-full   bg-slate-50 ">
       <SignupForm />
     </div>
   );

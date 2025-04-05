@@ -17,11 +17,13 @@ function Dashboard() {
           <h1 className="text-sm lg:text-[20px] font-semibold   "></h1>
         </div>
       </div>
-      <div className=" flex flex-col gap-12 w-full">
-        <Stats />
-        <Charts />
+      <div className=" flex flex-col gap-4 w-full">
+        <div>
+          <Stats />
+          <Charts />
+        </div>
 
-        <div className=" w-full h-auto mt-[2rem]"></div>
+        <div className=" w-full h-auto mt-[10px]"></div>
         <SalesChart />
         <TopCustomer />
         <UserChart />

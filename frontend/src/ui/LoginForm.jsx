@@ -13,7 +13,7 @@ function LoginForm() {
   };
 
   return (
-    <div className="bg-white p-4 w-[400px] ">
+    <div className="bg-white p-4 w-[400px]  ">
       <div className="flex flex-col items-center gap-2">
         <img
           src="mainlogo.jpeg"
@@ -66,7 +66,7 @@ function LoginForm() {
             I forget my password?
             <span className="text-blue-500">
               <span>
-                <Link to="/signup">forgetpassword</Link>
+                <Link to="/forgetpassword">forgetpassword</Link>
               </span>
             </span>
           </p>

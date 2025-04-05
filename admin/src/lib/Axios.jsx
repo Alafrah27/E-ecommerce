@@ -1,6 +1,6 @@
 import axios from "axios";
-// const url =  "https://e-ecommerce-api.onrender.com/api"
+const url = "https://e-ecommerce-api.onrender.com";
 export const axiosInstance = axios.create({
-  baseURL: "https://e-ecommerce-api.onrender.com/api",
+  baseURL: `${url}/api`,
   withCredentials: true,
 });

@@ -104,7 +104,7 @@ function Cart() {
                       <div className="flex justify-between items-center">
                         <h3 className="text-lg font-medium">{item.name}</h3>
                         <p className="text-lg font-bold text-gray-900">
-                          ${(item.price * item.quantity).toFixed(2)}
+                          {(item.price * item.quantity).toFixed(2)}
                         </p>
                       </div>
                       <p className="mt-1 text-sm text-gray-500">
